@@ -1,1 +1,2 @@
 # MininetTopology
+Mininet lecture expirements. 
