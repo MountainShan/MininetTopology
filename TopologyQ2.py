@@ -18,15 +18,15 @@ def main():
 
 	net.addLink(HostList[0], OFSwitchList[0],port1=1,port2=4)
 	net.addLink(HostList[1], OFSwitchList[1],port1=1,port2=4)
-        net.addLink(HostList[2], OFSwitchList[2],port1=1,port2=4)
-        net.addLink(HostList[3], OFSwitchList[3],port1=1,port2=4)
+	net.addLink(HostList[2], OFSwitchList[2],port1=1,port2=4)
+	net.addLink(HostList[3], OFSwitchList[3],port1=1,port2=4)
 
-        net.addLink(OFSwitchList[0],OFSwitchList[1],port1=1,port2=1)
-        net.addLink(OFSwitchList[0],OFSwitchList[3],port1=2,port2=2)
-        net.addLink(OFSwitchList[0],OFSwitchList[2],port1=3,port2=3)
-        net.addLink(OFSwitchList[1],OFSwitchList[2],port1=2,port2=2)
-        net.addLink(OFSwitchList[1],OFSwitchList[3],port1=3,port2=3)
-        net.addLink(OFSwitchList[2],OFSwitchList[3],port1=1,port2=1)
+	net.addLink(OFSwitchList[0],OFSwitchList[1],port1=1,port2=1)
+	net.addLink(OFSwitchList[0],OFSwitchList[3],port1=2,port2=2)
+	net.addLink(OFSwitchList[0],OFSwitchList[2],port1=3,port2=3)
+	net.addLink(OFSwitchList[1],OFSwitchList[2],port1=2,port2=2)
+	net.addLink(OFSwitchList[1],OFSwitchList[3],port1=3,port2=3)
+	net.addLink(OFSwitchList[2],OFSwitchList[3],port1=1,port2=1)
 
 	net.start()
 	CLI(net)
