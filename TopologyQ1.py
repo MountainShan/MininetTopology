@@ -10,10 +10,10 @@ def main():
 	HostList = []
 	net = Mininet(controller = None, link = TCLink)
 
-	for i in xrange(1):
+	for i in range(1):
 		OFSwitchList.append(net.addSwitch("s%s"%str(i+1), cls = OVSSwitch))
 
-	for i in xrange(2):
+	for i in range(2):
 		HostList.append(net.addHost("h%s"%str(i+1), ip = "10.0.0.%s/24"%str(i+1), mac = "00:04:00:00:00:%s"%str(i+1)))
 
 	net.addLink(HostList[0], OFSwitchList[0])
